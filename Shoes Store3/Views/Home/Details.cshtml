@@ -1,0 +1,51 @@
+﻿@model Shoes_Store3.Models.Shoes
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Информация</h2>
+
+<div>
+    <h4>Shoes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Firma.Firma_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Firma.Firma_name)
+            
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Model_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Model_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Size)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Size)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Назад", "Index")
+</p>
